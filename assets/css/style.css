@@ -164,7 +164,7 @@ input {
 }
 
 footer {
-    position: fixed;
+    position: static;
     bottom: 0;
     padding: 10px;
 }
