@@ -11,13 +11,14 @@
     <main>
         <div class="container">
             <h2>Guess the Number</h2>
-            <p> 
-                <b>Hint:</b> Name of a Cocktail</p> 
             <p id="displayWord"></p> 
             <p>Guess one letter: 
                 <input type="text" 
                     maxlength="1" 
                     id="letter-input"></p> 
+                    <div class="popup" onclick="myFunction()">Hint
+                        <span class="popuptext" id="myPopup">The word is a type of Cocktail.</span>
+                    </div>
                 <button onclick="guessLetter()">Submit</button>
         </div>
     </main>

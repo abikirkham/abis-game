@@ -74,7 +74,10 @@ function guessLetter() {
     // Check if all letters have been guessed 
     if (allLettersGuessed) { 
         alert("Congratulations! You guessed the word correctly!"); 
-    } else {
-    alert("Sorry, you didn't guess the word correctly. Try again!");
 }
 
+// When the user clicks on <div>, open the popup
+function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+}
