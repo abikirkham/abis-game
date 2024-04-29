@@ -32,3 +32,27 @@ document.getElementById("displayWord").textContent = displayWord;
 // To store the already guessed letters 
 let guessedlist = []; 
 
+// Function to check Guessed letter 
+function guessLetter() { 
+    let inputElement = document.getElementById("letter-input"); 
+
+    // To check empty input 
+    if (!inputElement.value) { 
+        alert("Empty Input box. Please add input letter"); 
+        return; 
+    } 
+
+    let letter = inputElement.value.toLowerCase(); 
+
+    // Clear the input field 
+    inputElement.value = ""; 
+
+    // Check if the letter has already been guessed 
+    if (guessedlist.includes(letter)) { 
+        alert("You have already guessed that letter!"); 
+        return; 
+    } 
+
+    // Add the letter to the guessed letters array 
+    guessedlist.push(letter);
+}
