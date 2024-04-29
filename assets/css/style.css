@@ -44,13 +44,18 @@ header h1 a:hover {
     background-color: #E9FCE4;
     margin: 0 auto;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: #333;
+}
+
+li {
+    margin: 20px;
+    text-align: left;
 }
 
 button,
 .play-button {
-    background-color: #FAE3F3; /* Green */
+    background-color: #FAE3F3; 
     border: none;
     color: #333;
     text-align: center;
@@ -81,7 +86,7 @@ button:hover,
 /* Adding style for input box */
 input { 
     width: 50px; 
-    padding: 1%; 
+    padding: 5%; 
     font-size: larger; 
     text-align: center; 
     margin-left: 2%; 
