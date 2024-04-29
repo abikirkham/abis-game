@@ -48,6 +48,7 @@ header h1 a:hover {
     box-shadow: #333;
 }
 
+button,
 .play-button {
     background-color: #FAE3F3; /* Green */
     border: none;
@@ -62,17 +63,33 @@ header h1 a:hover {
     padding: 10px 24px;
 }
 
+button,
 .play-button a {
     /* Styles for the link inside the button */
     color: #333;
     text-decoration: none;
 }
 
+button:hover,
 .play-button:hover,
 .play-button a:hover {
     color: #FAE3F3;
     background-color: #333;
     text-decoration: none;
+}
+
+/* Adding style for input box */
+input { 
+    width: 50px; 
+    padding: 1%; 
+    font-size: larger; 
+    text-align: center; 
+    margin-left: 2%; 
+} 
+
+/* Adding style for display word*/
+#displayWord { 
+    font-size: xx-large; 
 }
 
 footer {
