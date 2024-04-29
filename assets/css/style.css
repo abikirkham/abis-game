@@ -100,6 +100,7 @@ li {
     to {opacity:1 ;}
 }  
 
+.refresh-button,
 .popup,
 button,
 .play-button {
@@ -117,6 +118,7 @@ button,
     font-family: 'Indie Flower', cursive;
 }
 
+.refresh-button a,
 button,
 .play-button a {
     /* Styles for the link inside the button */
@@ -124,6 +126,7 @@ button,
     text-decoration: none;
 }
 
+.refresh-button:hover,
 .popup:hover,
 button:hover,
 .play-button:hover,
