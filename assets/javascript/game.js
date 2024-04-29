@@ -25,3 +25,10 @@ for (let i = 0; i < selectedWord.length; i++) {
     displayWord += "_ "; 
 } 
 document.getElementById("displayWord").textContent = displayWord;
+
+
+
+
+// To store the already guessed letters 
+let guessedlist = []; 
+
