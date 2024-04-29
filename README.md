@@ -1,39 +1,68 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Abi's Game
 
-Welcome,
+## Overview
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+Simple as is sounds, this is my game, it is a numbers guessing game. this will be slowly developed on to keep the brains stimulated.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
+## User Stories
 
-## Codeanywhere Reminders
+- **As a [type of user]**, I want to [what the user wants to achieve] so that [reason for wanting to achieve it].
+- ...
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+## Wireframes
 
-`python3 -m http.server`
+![Homepage Wireframe](link_to_homepage_wireframe)
+![Levels Wireframe](link_to_levels_wireframe)
+![Game Wireframe](link_to_game_wireframe)
+...
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+## Technologies Used
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+- **HTML:** Used for structuring the web pages.
+- **CSS:** Used for styling the HTML documents.
+- **JavaScript:** Used for implementing interactive features and game logic.
+- **GitHub:** Used for version control and deployment.
+- **Gitpod/Visual Studio Code (IDE):** Used for coding and managing the project.
+- ...
 
-`http_server`
+## Features
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+- **Landing page:** Introduction to the project and navigation to different sections.
+- **Game Page:** Displays the math game interface for users to play.
+- **Header and Footer:** Consistent navigation and branding across pages.
+- ...
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+## Deployment
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+### Making a Local Clone to Create Project
 
-To log into the Heroku toolbelt CLI:
+1. Find the GitHub Repository.
+2. Click the Code button.
+3. Copy the link shown.
+4. In Gitpod/Visual Studio Code, change the directory to the desired location.
+5. Type `git clone`, and paste the link copied in step 3.
+6. Press Enter to create the local clone.
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+### Updating Changes
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+- `git add <file>`: Add file(s) to the staging area.
+- `git commit -m “commit message”`: Commit changes to the local repository.
+- `git push`: Update committed code to the remote repository on GitHub.
 
----
+### Deploying a GitHub Repository via GitHub Pages
 
-Happy coding!
+1. Go to Repository Settings.
+2. Scroll down to GitHub Pages section.
+3. Under Source, select Main branch.
+4. Click Save.
+5. Wait for the site to be published at the provided link.
+
+## Testing
+
+- **Manual Testing:** Detailed testing process, including scenarios and outcomes. Add the table
+- **Automated Testing:** Results from testing tools like Lighthouse, responsiveness.
+- **Validator Testing:** Validation results from HTML and CSS validators.
+
+## Credits
+
+- 
