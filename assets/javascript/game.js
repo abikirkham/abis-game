@@ -14,10 +14,12 @@ const words = [
     "paloma"
 ];
 
+
 // Pick random word section
 let randomIndex = Math.floor(Math.random() * words.length); 
 let selectedWord = words[randomIndex]; 
 console.log(selectedWord); 
+
 
 // Intial display of word
 let displayWord = ""; 
@@ -27,17 +29,16 @@ for (let i = 0; i < selectedWord.length; i++) {
 document.getElementById("displayWord").textContent = displayWord;
 
 
-
-
 // To store the already guessed letters 
 let guessedlist = []; 
+
 
 // Function to check Guessed letter 
 function guessLetter() { 
     let inputElement = document.getElementById("letter-input"); 
 
     // To check empty input 
-    if (!inputElement.value) { 
+    if (!inputElement.value) {
         alert("Empty Input box. Please add input letter"); 
         return; 
     } 
@@ -56,6 +57,7 @@ function guessLetter() {
     // Add the letter to the guessed letters array 
     guessedlist.push(letter);
 }
+
  // Update the word display based on the guessed letters 
     let updatedDisplay = ""; 
     let allLettersGuessed = true; 
@@ -75,3 +77,4 @@ function guessLetter() {
     } else {
     alert("Sorry, you didn't guess the word correctly. Try again!");
 }
+
