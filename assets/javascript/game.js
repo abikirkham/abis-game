@@ -13,3 +13,7 @@ const words = [
     "spritz",
     "paloma"
 ];
+
+let randomIndex = Math.floor(Math.random() * words.length); 
+let selectedWord = words[randomIndex]; 
+console.log(selectedWord); 
