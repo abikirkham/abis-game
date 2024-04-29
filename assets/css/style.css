@@ -1,0 +1,56 @@
+/* Groovy Font */
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+/* Resetting Default Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Indie Flower', cursive;
+    background-color: #FAE3F3;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #FAE3F3; 
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+/* Main Content Styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.content {
+    background-color: #E9FCE4;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+}
