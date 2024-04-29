@@ -72,4 +72,6 @@ function guessLetter() {
     // Check if all letters have been guessed 
     if (allLettersGuessed) { 
         alert("Congratulations! You guessed the word correctly!"); 
-    } 
+    } else {
+    alert("Sorry, you didn't guess the word correctly. Try again!");
+}
