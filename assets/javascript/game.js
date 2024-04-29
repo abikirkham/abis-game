@@ -1,5 +1,3 @@
-// game.js 
-
 // Array of words to choose from 
 const words = [
     "mojito",
@@ -56,9 +54,8 @@ function guessLetter() {
 
     // Add the letter to the guessed letters array 
     guessedlist.push(letter);
-}
 
- // Update the word display based on the guessed letters 
+    // Update the word display based on the guessed letters 
     let updatedDisplay = ""; 
     let allLettersGuessed = true; 
     for (let i = 0; i < selectedWord.length; i++) { 
@@ -74,6 +71,7 @@ function guessLetter() {
     // Check if all letters have been guessed 
     if (allLettersGuessed) { 
         alert("Congratulations! You guessed the word correctly!"); 
+    }
 }
 
 // When the user clicks on <div>, open the popup
