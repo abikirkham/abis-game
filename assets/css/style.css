@@ -36,6 +36,41 @@ header h1 {
     background-color: #E9FCE4;
     margin: 0 auto;
     padding: 20px;
+    border-radius: 5px;
+    box-shadow: #333;
+}
+
+.play-button {
+    background-color: #FAE3F3; /* Green */
+    border: none;
+    color: #333;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 10px 24px;
+}
+
+.play-button a {
+    /* Styles for the link inside the button */
+    color: #333;
+    text-decoration: none;
+}
+
+.play-button:hover,
+.play-button a:hover {
+    color: #FAE3F3;
+    background-color: #333;
+    text-decoration: none;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    padding: 10px;
 }
 
 /* Responsive Design */
