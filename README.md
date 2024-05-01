@@ -59,9 +59,35 @@ Simple as is sounds, this is my game, it is a numbers guessing game. this will b
 
 ## Testing
 
-- **Manual Testing:** Detailed testing process, including scenarios and outcomes. Add the table
+- **Manual Testing:** Detailed testing process, including scenarios and outcomes. 
+
+
+| Function | User Action | Outcome | Result |
+|----------|-------------|---------|--------|
+| Access webpage | Use this link | | Homepage with how to play | Pass |
+| CSS styles for hover | Hover over links (title and play button) | The links will change colour | Pass |
+| Load game | Click play button | This will open the game | Pass |
+| CSS styles for hover | Hover over hint, submit, and refresh button | The buttons will change colour | Pass |
+| Letter input | Type in letter to the input box | Letter displays in box | Pass |
+| Submit with correct letter | Once entered letter, click submit button | If letter correct, this will show on the dotted line in the correct position | Pass |
+| Submit with incorrect letter | Once entered letter, click submit button | If letter incorrect, this will disappear | Pass |
+| Submit with no input | Click enter without having a letter in the input | A pop-up will show with error message to say the user needs to enter a letter | Pass |
+| Submit with letter already entered | Enter a letter in the input box which has already been guessed | A pop-up error message will show to say the letter has already been entered | Pass |
+| Submit on final correct guess | User will enter the last letter which is correct | A pop-up message will show to say congrats they have guessed correctly | Pass |
+| Refresh | User will click the refresh button when they want a new game | New game will load clearing guesses | Pass |
+| Hint | User will click on the hint option when they are stuck | A pop-up box will hover over the hint box with a clue | Pass |
+
 - **Automated Testing:** Results from testing tools like Lighthouse, responsiveness.
+index.html
+
+game.html
+
 - **Validator Testing:** Validation results from HTML and CSS validators.
+index.html
+
+game.html
+
+style.css
 
 ## Credits
 
