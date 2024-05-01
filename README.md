@@ -1,20 +1,24 @@
 # Abi's Game
-
+![Mockup](docs/mockup.png)
 ## Overview
 
 Simple as is sounds, this is my game, it is a numbers guessing game. this will be slowly developed on to keep the brains stimulated.
 
 ## User Stories
 
-- **As a [type of user]**, I want to [what the user wants to achieve] so that [reason for wanting to achieve it].
-- ...
+1. **Start a New Game:** As a player, I want to start a new game easily so that I can begin guessing words right away.
+2. **Guess Feedback:** As a player, I want the game to provide feedback on my guesses, indicating whether the guessed letter is in the word and revealing its position if correct.
+3. **Incorrect Guess Tracking:** As a player, I want the game to keep track of my incorrect guesses, such as displaying them or deducting points.
+4. **Hint Option:** As a player, I want the option to receive a hint if I'm stuck, providing me with a clue related to the word being a cocktail.
+5. **Game End on Correct Guess:** As a player, I want the game to end when I correctly guess the word, congratulating me on my win.
+6. **Play Multiple Rounds:** As a player, I want the ability to play multiple rounds without having to restart the entire game.
+7. **Intuitive Navigation:** As a player, I want the game to be intuitive and easy to navigate, with clear instructions on how to play.
 
 ## Wireframes
 
 ![Homepage Wireframe](link_to_homepage_wireframe)
-![Levels Wireframe](link_to_levels_wireframe)
 ![Game Wireframe](link_to_game_wireframe)
-...
+
 
 ## Technologies Used
 
@@ -28,9 +32,13 @@ Simple as is sounds, this is my game, it is a numbers guessing game. this will b
 ## Features
 
 - **Landing page:** Introduction to the project and navigation to different sections.
+![home](docs/home.png)
 - **Game Page:** Displays the math game interface for users to play.
+![game](docs/game.png)
 - **Header and Footer:** Consistent navigation and branding across pages.
-- ...
+![header](docs/header.png)
+![footer](docs/footer.png)
+
 
 ## Deployment
 
