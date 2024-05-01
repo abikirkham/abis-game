@@ -77,10 +77,20 @@ Simple as is sounds, this is my game, it is a numbers guessing game. this will b
 | Refresh | User will click the refresh button when they want a new game | New game will load clearing guesses | Pass |
 | Hint | User will click on the hint option when they are stuck | A pop-up box will hover over the hint box with a clue | Pass |
 
-- **Automated Testing:** Results from testing tools like Lighthouse, responsiveness.
+- **Automated Testing:** Results from testing tools like Lighthouse, screen size responsiveness.
 index.html
 
+
+![index-lighthouse](docs/index-lighthouse.png)
+![index-screensizes](docs/index-screen-sizes.png)
+
+
 game.html
+
+
+![game-lighthouse](docs/game-lighthouse.png)
+![game-screensizes](docs/game-screen-sizes.png)
+
 
 - **Validator Testing:** Validation results from HTML and CSS validators.
 index.html
