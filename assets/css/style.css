@@ -45,7 +45,7 @@ header h1 a:hover {
     margin: 0 auto;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: #333;
+    box-shadow: 0cap 0 10px rgba(255, 105, 180, 0.5);
 }
 
 li {
