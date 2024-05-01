@@ -2,7 +2,7 @@
 ![Mockup](docs/mockup.png)
 ## Overview
 
-Simple as is sounds, this is my game, it is a numbers guessing game. this will be slowly developed on to keep the brains stimulated.
+Simple as is sounds, this is my game, it is a word guessing game. This will be slowly developed on to keep the brain stimulated.
 
 ## User Stories
 
@@ -27,13 +27,12 @@ Simple as is sounds, this is my game, it is a numbers guessing game. this will b
 - **JavaScript:** Used for implementing interactive features and game logic.
 - **GitHub:** Used for version control and deployment.
 - **Gitpod/Visual Studio Code (IDE):** Used for coding and managing the project.
-- ...
 
 ## Features
 
-- **Landing page:** Introduction to the project and navigation to different sections.
+- **Landing page:** Introduction to the project with a 'how to play' section and navigation to the game.
 ![home](docs/home.png)
-- **Game Page:** Displays the math game interface for users to play.
+- **Game Page:** Displays the word guessing game interface for users to play with interactive features.
 ![game](docs/game.png)
 - **Header and Footer:** Consistent navigation and branding across pages.
 ![header](docs/header.png)
@@ -72,7 +71,7 @@ Simple as is sounds, this is my game, it is a numbers guessing game. this will b
 
 | Function | User Action | Outcome | Result |
 |----------|-------------|---------|--------|
-| Access webpage | Use this link | | Homepage with how to play | Pass |
+| Access webpage | Use this link | Homepage with how to play | Pass |
 | CSS styles for hover | Hover over links (title and play button) | The links will change colour | Pass |
 | Load game | Click play button | This will open the game | Pass |
 | CSS styles for hover | Hover over hint, submit, and refresh button | The buttons will change colour | Pass |
@@ -84,6 +83,7 @@ Simple as is sounds, this is my game, it is a numbers guessing game. this will b
 | Submit on final correct guess | User will enter the last letter which is correct | A pop-up message will show to say congrats they have guessed correctly | Pass |
 | Refresh | User will click the refresh button when they want a new game | New game will load clearing guesses | Pass |
 | Hint | User will click on the hint option when they are stuck | A pop-up box will hover over the hint box with a clue | Pass |
+
 
 - **Automated Testing:** Results from testing tools like Lighthouse, screen size responsiveness.
 index.html
@@ -106,6 +106,10 @@ index.html
 game.html
 
 style.css
+
+## Bugs
+
+hint option not working - ask tutors and put results here
 
 ## Credits
 
