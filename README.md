@@ -85,27 +85,37 @@ Simple as is sounds, this is my game, it is a word guessing game. This will be s
 | Hint | User will click on the hint option when they are stuck | A pop-up box will hover over the hint box with a clue | Pass |
 
 
-- **Automated Testing:** Results from testing tools like Lighthouse, screen size responsiveness.
+
+<details>
+  <summary>Click to expand for more testing below:</summary>
+- **Automated Testing:** Results from testing tools like [Lighthouse](https://chromewebstore.google.com/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk) for performance evaluation, and [Responsive Viewer](https://chromewebstore.google.com/detail/responsive-viewer/inmopeiepgfljkpkidclfgbgbmfcennb) for assessing screen size responsiveness, significantly improve the quality assurance process.
+
 index.html
-
-
 ![index-lighthouse](docs/index-lighthouse.png)
 ![index-screensizes](docs/index-screen-sizes.png)
 
 
 game.html
-
-
 ![game-lighthouse](docs/game-lighthouse.png)
 ![game-screensizes](docs/game-screen-sizes.png)
 
 
-- **Validator Testing:** Validation results from HTML and CSS validators.
+- **Validator Testing:** Validation results from HTML and CSS validators. Utilising [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) for CSS validation and [W3C Markup Validator](https://validator.w3.org/nu/) for HTML validation ensures thorough testing for any errors.
+
 index.html
+![index html validator](docs/index-html-validator.png)
 
 game.html
+![gamee html validator](docs/game-html-validator.png)
 
 style.css
+![css validator](docs/index-css-validator.png)
+
+- **Javascript Testing:** Using [JSHint](https://jshint.com) helps in identifying and rectifying JavaScript errors, ensuring code quality and reliability.
+
+Javascript - game.js
+![jshint validator](docs/jshint-validator.png)
+</details>
 
 ## Bugs
 
