@@ -88,7 +88,7 @@ Simple as is sounds, this is my game, it is a word guessing game. This will be s
 
 <details>
   <summary><b>Click to expand for more testing below:</b></summary>
-  
+
 - **Automated Testing:** Results from testing tools like [Lighthouse](https://chromewebstore.google.com/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk) for performance evaluation, and [Responsive Viewer](https://chromewebstore.google.com/detail/responsive-viewer/inmopeiepgfljkpkidclfgbgbmfcennb) for assessing screen size responsiveness, significantly improve the quality assurance process.
 
 index.html
@@ -120,7 +120,65 @@ Javascript - game.js
 
 ## Bugs
 
-hint option not working - ask tutors and put results here
+```css
+
+
+/* Pop up styles */
+  /* The actual popup (appears on top) */
+.popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+}
+
+  /* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    bottom: 125%; /*    This was the issue because When using relative units, such as percentage, the maximum and minimum value are 100% and 0% (as the child can only be 100% of the parent element before it overflows). With using a value of 125% it was knocking it off the screen */
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+
+/* Pop up styles */
+  /* The actual popup (appears on top) */
+.popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    margin-left: -190px;
+    margin-top: -80px; /* to move the pop up box */
+}
+
+  /* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+```
 
 ## Credits
 
