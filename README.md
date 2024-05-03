@@ -16,8 +16,9 @@ Simple as is sounds, this is my game, it is a word guessing game. This will be s
 
 ## Wireframes
 
-![Homepage Wireframe](link_to_homepage_wireframe)
-![Game Wireframe](link_to_game_wireframe)
+![Homepage Wireframe](docs/index-html-wireframe.png)
+![Game Wireframe](docs/game-html-wireframe.png)
+![Catagory Wireframe](docs/category-html-wireframe.png)
 
 
 ## Technologies Used
@@ -187,4 +188,5 @@ Javascript - game.js
 - https://www.w3schools.com/jsref/met_win_alert.asp
 - https://www.w3schools.com/howto/howto_js_popup.asp
 - https://forums.mobirise.com/discussion/30640/create-a-refresh-button-for-just-one-page
+- https://www.freeconvert.com/tif-to-png/download 
 
