@@ -87,7 +87,7 @@ Simple as is sounds, this is my game, it is a word guessing game. This will be s
 
 
 <details>
-  <summary>Click to expand for more testing below:</summary>
+  <summary><b>Click to expand for more testing below:</b></summary>
 - **Automated Testing:** Results from testing tools like [Lighthouse](https://chromewebstore.google.com/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk) for performance evaluation, and [Responsive Viewer](https://chromewebstore.google.com/detail/responsive-viewer/inmopeiepgfljkpkidclfgbgbmfcennb) for assessing screen size responsiveness, significantly improve the quality assurance process.
 
 index.html
