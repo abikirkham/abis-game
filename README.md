@@ -32,13 +32,25 @@ Simple as is sounds, this is my game, it is a word guessing game. This will be s
 ## Features
 
 - **Landing page:** Introduction to the project with a 'how to play' section and navigation to the game.
+
 ![home](docs/home.png)
+
 - **Game Page:** Displays the word guessing game interface for users to play with interactive features.
+
 ![game](docs/game.png)
+
 - **Header and Footer:** Consistent navigation and branding across pages.
+
 ![header](docs/header.png)
 ![footer](docs/footer.png)
 
+- **Hint:** If the user is struggling to guess the word, I have included an extra function for the user to get a hint on one click.
+
+![hint](docs/hint.png)
+
+- **Refresh:** Again, I have included an extra interaction for if the user wants a new game after guessing the correct word or find the current word too hard.
+
+![refresh](docs/refresh.png)
 
 ## Deployment
 
@@ -120,12 +132,37 @@ Javascript - game.js
 </details>
 
 ## Bugs
+Upon creation of this game, I have decided to add a few more personalish features I think will make this project better for the user. One of these funtions is the 'Hint' function. Initially I was having issues with the display of the next, I ran this code through validator services like jshint and in the terminal and the function was properly srtuctured and working as should. This meant there was an issue in my css code, I began trial and error and attempted to solve this issue myself, I had the elp from Code Institue Tutor support to help me under stand where the issue was. Below is the orginal css code for this function and where the error lies.
 
 ```css
-
-
 /* Pop up styles */
-  /* The actual popup (appears on top) */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    bottom: 125%; /* This was the error */
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+```
+
+This was the issue is due to when using relative units, such as percentage, the maximum and minimum value are 100% and 0% (as the child can only be 100% of the parent element before it overflows). With using a value of 125% it was knocking it off the screen. For me, I decided to simply remove it and then add additional styles to the text itself on where I wanted to position the box.
+
+
+```css
+/* Pop up styles */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
 .popup .popuptext {
     visibility: hidden;
     width: 160px;
@@ -137,47 +174,8 @@ Javascript - game.js
     position: absolute;
     z-index: 1;
     left: 50%;
-}
-
-  /* Popup arrow */
-.popup .popuptext::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    bottom: 125%; /*    This was the issue because When using relative units, such as percentage, the maximum and minimum value are 100% and 0% (as the child can only be 100% of the parent element before it overflows). With using a value of 125% it was knocking it off the screen */
-    border-width: 5px;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
-}
-
-
-/* Pop up styles */
-  /* The actual popup (appears on top) */
-.popup .popuptext {
-    visibility: hidden;
-    width: 160px;
-    background-color: #555;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 8px 0;
-    position: absolute;
-    z-index: 1;
-    left: 50%;
-    margin-left: -190px;
-    margin-top: -80px; /* to move the pop up box */
-}
-
-  /* Popup arrow */
-.popup .popuptext::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
+    margin-left: -190px; /* New style added for positioning of text box */
+    margin-top: -80px; /* New style added for positioning of text box */
 }
 ```
 
@@ -189,4 +187,3 @@ Javascript - game.js
 - https://www.w3schools.com/howto/howto_js_popup.asp
 - https://forums.mobirise.com/discussion/30640/create-a-refresh-button-for-just-one-page
 - https://www.freeconvert.com/tif-to-png/download 
-
