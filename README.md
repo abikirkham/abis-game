@@ -16,6 +16,8 @@ Simple as is sounds, this is my game, it is a word guessing game. This will be s
 
 ## Wireframes
 
+Below are my wireframes, I love simpliciy and I wanted to carry that on through this game. You can see the plan and sturcture I have created to develop my game.
+
 ![Homepage Wireframe](docs/index-html-wireframe.png)
 ![Game Wireframe](docs/game-html-wireframe.png)
 ![Catagory Wireframe](docs/category-html-wireframe.png)
