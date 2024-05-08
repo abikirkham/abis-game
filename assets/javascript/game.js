@@ -1,16 +1,78 @@
-// Array of words to choose from 
-const words = [
-    "mojito",
-    "martini",
-    "manhattan",
-    "negroni",
-    "gimlet",
-    "mimosa",
-    "sazerac",
-    "julep",
-    "spritz",
-    "paloma"
-];
+// Categories for user to chose
+const categoriesWords = {
+    football: [
+        "Ronaldo",
+        "Messi",
+        "Neymar",
+        "Mbappé",
+        "Salah",
+        "Lewandowski",
+        "De Bruyne",
+        "Van Dijk",
+        "Kane",
+        "Haaland"
+    ],
+    cocktails: [
+        "Mojito",
+        "Martini",
+        "Manhattan",
+        "Negroni",
+        "Gimlet",
+        "Mimosa",
+        "Sazerac",
+        "Julep",
+        "Spritz",
+        "Paloma"
+    ],
+    clothing: [
+        "Nike",
+        "Adidas",
+        "Gucci",
+        "Prada",
+        "Zara",
+        "H&M",
+        "Calvin Klein",
+        "Tommy Hilfiger",
+        "Levi's",
+        "Versace"
+    ],
+    foods: [
+        "Pizza",
+        "Burger",
+        "Sushi",
+        "Pasta",
+        "Tacos",
+        "Pancakes",
+        "Ramen",
+        "Steak",
+        "Salad",
+        "Burrito"
+    ],
+    animals: [
+        "Lion",
+        "Tiger",
+        "Elephant",
+        "Giraffe",
+        "Cheetah",
+        "Wolf",
+        "Panda",
+        "Koala",
+        "Gorilla",
+        "Penguin"
+    ],
+    countries: [
+        "USA",
+        "UK",
+        "France",
+        "Germany",
+        "Japan",
+        "Canada",
+        "Italy",
+        "Brazil",
+        "Australia",
+        "India"
+    ]
+};
 
 
 // Pick random word section
