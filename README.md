@@ -54,6 +54,19 @@ Below are my wireframes, I love simpliciy and I wanted to carry that on through 
 
 ![refresh](docs/refresh.png)
 
+- **Catagories** Here I wanted a user to have mutliple choices to chose from to keep the guessing game more interesting. I had some help from Tutors support with this to help me understand URL Params. Here below is the features of the html and javascript behnd it explained.
+
+![catagories](docs/catagory-html.png)
+explnation of code and link to understanding url params
+
+```javascript
+const urlParams = new URLSearchParams(window.location.search);
+const category = urlParams.get('category'); // category
+const words = categoriesWords[category];
+let randomIndex = Math.floor(Math.random() * words.length);
+let selectedWord = words[randomIndex];
+```
+
 ## Deployment
 
 ### Making a Local Clone to Create Project
