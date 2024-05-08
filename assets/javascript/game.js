@@ -86,11 +86,16 @@ const categoriesWords = {
 // console.log(selectedWord); 
 
 
+
 const urlParams = new URLSearchParams(window.location.search);
 const category = urlParams.get('category'); // category
 const words = categoriesWords[category];
 let randomIndex = Math.floor(Math.random() * words.length);
 let selectedWord = words[randomIndex];
+
+console.log("Category:", category);
+console.log("Words list:", words);
+console.log("Selected word:", selectedWord);
 
 
 // Intial display of word
