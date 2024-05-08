@@ -54,10 +54,8 @@ Below are my wireframes, I love simpliciy and I wanted to carry that on through 
 
 ![refresh](docs/refresh.png)
 
-- **Catagories** Here I wanted a user to have mutliple choices to chose from to keep the guessing game more interesting. I had some help from Tutors support with this to help me understand URL Params. Here below is the features of the html and javascript behnd it explained.
-
-![catagories](docs/catagory-html.png)
-explnation of code and link to understanding url params
+- **Catagories** Here I wanted a user to have mutliple choices to chose from to keep the guessing game more interesting. 
+![category](docs/category-html.png)
 
 ```javascript
 const urlParams = new URLSearchParams(window.location.search);
@@ -110,8 +108,18 @@ let selectedWord = words[randomIndex];
 | Submit with letter already entered | Enter a letter in the input box which has already been guessed | A pop-up error message will show to say the letter has already been entered | Pass |
 | Submit on final correct guess | User will enter the last letter which is correct | A pop-up message will show to say congrats they have guessed correctly | Pass |
 | Refresh | User will click the refresh button when they want a new game | New game will load clearing guesses | Pass |
-| Hint | User will click on the hint option when they are stuck | A pop-up box will hover over the hint box with a clue | Pass |
+| Hint | User will click on the hint option when they are stuck | A pop-up box will hover over the hint box with a sarcastic clue. | Pass |
+| Categories html | User clicks on 'PLAY' button on html or the categories link in the nav section | The page will load with matching css and hover boxes loading correctly | Pass |
+| Selected category | User to Select a category | This will open there chosen category, can be proven by looking at html link | Pass |
 
+
+#### View Category testing 
+show code to open each catergordy
+with image of link and explain why 
+I had some help from Tutors support with this to help me understand URL Params. Here below is the features of the html and javascript behnd it explained.
+
+![catagories](docs/catagory-html.png)
+explnation of code and link to understanding url params
 
 
 <details>
@@ -147,7 +155,7 @@ Javascript - game.js
 </details>
 
 ## Bugs
-Upon creation of this game, I have decided to add a few more personalish features I think will make this project better for the user. One of these funtions is the 'Hint' function. Initially I was having issues with the display of the next, I ran this code through validator services like jshint and in the terminal and the function was properly srtuctured and working as should. This meant there was an issue in my css code, I began trial and error and attempted to solve this issue myself, I had the elp from Code Institue Tutor support to help me under stand where the issue was. Below is the orginal css code for this function and where the error lies.
+1. Upon creation of this game, I have decided to add a few more personalish features I think will make this project better for the user. One of these funtions is the 'Hint' function. Initially I was having issues with the display of the next, I ran this code through validator services like jshint and in the terminal and the function was properly srtuctured and working as should. This meant there was an issue in my css code, I began trial and error and attempted to solve this issue myself, I had the elp from Code Institue Tutor support to help me under stand where the issue was. Below is the orginal css code for this function and where the error lies.
 
 ```css
 /* Pop up styles */
@@ -193,6 +201,11 @@ This was the issue is due to when using relative units, such as percentage, the 
     margin-top: -80px; /* New style added for positioning of text box */
 }
 ```
+
+2. The issue with the guess the word function was not allowing the first letter of the word to be recognised or accepted as seen below:
+
+![guess-error](docs/guess-error.png)
+
 
 ## Credits
 
