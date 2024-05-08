@@ -75,8 +75,6 @@ const categoriesWords = {
 };
 
 
-
-
 // Pick random word from the selected category
 const words = categoriesWords[category]; // new line to get the selected category
 let randomIndex = Math.floor(Math.random() * words.length); 
