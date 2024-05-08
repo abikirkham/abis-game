@@ -76,10 +76,21 @@ const categoriesWords = {
 
 
 // Pick random word from the selected category
-const words = categoriesWords[category]; // new line to get the selected category
-let randomIndex = Math.floor(Math.random() * words.length); 
-let selectedWord = words[randomIndex]; 
-console.log(selectedWord); 
+
+// const urlParams = new URLSearchParams(window.location.search);
+// const words = urlParams.get('category'); // category
+// console.log(words) // temp
+// // const words = categoriesWords[category]; // new line to get the selected category
+// let randomIndex = Math.floor(Math.random() * words.length); 
+// let selectedWord = words[randomIndex]; 
+// console.log(selectedWord); 
+
+
+const urlParams = new URLSearchParams(window.location.search);
+const category = urlParams.get('category'); // category
+const words = categoriesWords[category];
+let randomIndex = Math.floor(Math.random() * words.length);
+let selectedWord = words[randomIndex];
 
 
 // Intial display of word
