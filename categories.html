@@ -22,6 +22,11 @@
         </div>
             </main>
     <footer>For educational use only - AK 2024</footer>
-<script src="assets/javascript/game.js"></script>
+<script>
+    function startGame(category) {
+        // Construct the URL with the selected category as a parameter
+        window.location.href = `game.html?category=${category}`;
+    }
+</script>
 </body>
 </html>

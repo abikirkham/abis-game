@@ -75,10 +75,11 @@ const categoriesWords = {
 };
 
 
-// Pick random word section
+// Pick random word from the selected category
+const words = categoriesWords[category];
 let randomIndex = Math.floor(Math.random() * words.length); 
 let selectedWord = words[randomIndex]; 
-console.log(selectedWord); 
+console.log(selectedWord);  
 
 
 // Intial display of word
