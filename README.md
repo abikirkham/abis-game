@@ -25,11 +25,11 @@ Below are my wireframes, I love simpliciy and I wanted to carry that on through 
 
 ## Technologies Used
 
-- **HTML:** Used for structuring the web pages.
-- **CSS:** Used for styling the HTML documents.
-- **JavaScript:** Used for implementing interactive features and game logic.
-- **GitHub:** Used for version control and deployment.
-- **Gitpod/Visual Studio Code (IDE):** Used for coding and managing the project.
+- [HTML:](https://en.wikipedia.org/wiki/HTML) Used for structuring the web pages.
+- [CSS:](https://en.wikipedia.org/wiki/CSS) Used for styling the HTML documents.
+- [JavaScript:](https://en.wikipedia.org/wiki/JavaScript) Used for implementing interactive features and game logic.
+- [GitHub:](https://en.wikipedia.org/wiki/GitHub) Used for version control and deployment.
+- [Gitpod](https://www.gitpod.io) / [Visual Studio Code](https://en.wikipedia.org/wiki/Visual_Studio) (IDE): Used for coding and managing the project.
 
 ## Features
 
