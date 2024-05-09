@@ -55,15 +55,7 @@ Below are my wireframes, I love simpliciy and I wanted to carry that on through 
 ![refresh](docs/refresh.png)
 
 - **Catagories** Here I wanted a user to have mutliple choices to chose from to keep the guessing game more interesting. 
-![category](docs/category-html.png)
-
-```javascript
-const urlParams = new URLSearchParams(window.location.search);
-const category = urlParams.get('category'); // category
-const words = categoriesWords[category];
-let randomIndex = Math.floor(Math.random() * words.length);
-let selectedWord = words[randomIndex];
-```
+![category](docs/categories.png)
 
 ## Deployment
 
@@ -112,15 +104,46 @@ let selectedWord = words[randomIndex];
 | Categories html | User clicks on 'PLAY' button on index.html | The page will load with matching css and hover boxes loading correctly | Pass |
 | Selected category | User to Select a category | This will open there chosen category, can be proven by looking at html link | Pass |
 
-
 #### View Category testing 
-show code to open each catergordy
-with image of link and explain why 
-I had some help from Tutors support with this to help me understand URL Params. Here below is the features of the html and javascript behnd it explained.
 
-![catagories](docs/catagory-html.png)
-explnation of code and link to understanding url params
+In the process of enhancing the game's functionality to include multiple categories, I made several adjustments to ensure a seamless user experience. Initially, the game solely revolved around guessing words related to cocktails. However, to personalise the game and provide more variety, I decided to incorporate additional categories such as football players and clothing brands.
 
+To implement this feature, I first modified the data structure by renaming the constant from `words` to `categoriesWords` and expanded it to accommodate multiple categories. Each category now contains an array of words associated with it.
+
+Next, I needed to update the game logic to select a random word from the user's chosen category. Previously, the code simply selected a random word from the single category list using `Math.random()`. However, with the help from the tutors at Code Institute and [SheCodes](https://www.shecodes.io/athena/27068-what-is-urlsearchparams-in-javascript#:~:text=question%20for%20FREE-,%5BJavaScript%5D%20%2D%20What%20is%20URLSearchParams%20in%20JavaScript%3F,modify%20and%20manipulate%20the%20URL.) in understanding URLSearchParams to allow me to introduce multiple categories, I used URL parameters to identify the selected category. This information is extracted from the URL using `URLSearchParams`, ensuring that the game knows which category the user has chosen.
+
+Here's a code snippet illustrating the updated logic:
+
+```javascript
+const urlParams = new URLSearchParams(window.location.search);
+const category = urlParams.get('category'); // Get category from URL parameter
+const words = categoriesWords[category]; // Retrieve words array for selected category
+let randomIndex = Math.floor(Math.random() * words.length); // Calculate random index within the words array
+let selectedWord = words[randomIndex]; // Select a random word from the words array
+```
+
+I decided to split my game into two HTML pages for better organization. One page is for selecting categories, and the other is for playing the game. This separation makes the code easier to manage. When users click on a category button, it triggers the startGame function, which constructs a URL with the selected category as a parameter. I used the window.location.href method to redirect users to the game page with their chosen category. This setup improves the user experience and makes it easier to expand the game with more categories in the future. I found [W3Schools](https://www.w3schools.com/js/js_window_location.asp) helpful for understanding how to use window.location.
+
+```html
+<main>
+        <div class="container">
+            <h2>Choose your category</h2>
+            <button  onclick="startGame('football')">Football Players</button>
+            <button  onclick="startGame('cocktails')">Cocktails</button>
+            <button  onclick="startGame('clothing')">Clothing Brands</button>
+            <button  onclick="startGame('foods')">Foods</button>
+            <button  onclick="startGame('animals')">Animals</button>
+            <button  onclick="startGame('countries')">Countries</button>
+        </div>
+            </main>
+    <footer>For educational use only - AK 2024</footer>
+<script>
+    function startGame(category) {
+        // Construct the URL with the selected category as a parameter
+        window.location.href = `game.html?category=${category}`;
+    }
+</script>
+```
 
 <details>
   <summary><b>Click to expand for more testing below:</b></summary>
