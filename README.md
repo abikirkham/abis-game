@@ -109,7 +109,7 @@ let selectedWord = words[randomIndex];
 | Submit on final correct guess | User will enter the last letter which is correct | A pop-up message will show to say congrats they have guessed correctly | Pass |
 | Refresh | User will click the refresh button when they want a new game | New game will load clearing guesses | Pass |
 | Hint | User will click on the hint option when they are stuck | A pop-up box will hover over the hint box with a sarcastic clue. | Pass |
-| Categories html | User clicks on 'PLAY' button on html or the categories link in the nav section | The page will load with matching css and hover boxes loading correctly | Pass |
+| Categories html | User clicks on 'PLAY' button on index.html | The page will load with matching css and hover boxes loading correctly | Pass |
 | Selected category | User to Select a category | This will open there chosen category, can be proven by looking at html link | Pass |
 
 
