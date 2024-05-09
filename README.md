@@ -159,6 +159,10 @@ game.html
 ![game-lighthouse](docs/game-lighthouse.png)
 ![game-screensizes](docs/game-screen-sizes.png)
 
+categories.html
+![category-lighthouse](docs/category-lighthouse.png)
+![category-screensizes](docs/categories-screen-sizes.png)
+
 
 - **Validator Testing:** Validation results from HTML and CSS validators. Utilising [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) for CSS validation and [W3C Markup Validator](https://validator.w3.org/nu/) for HTML validation ensures thorough testing for any errors.
 
@@ -166,7 +170,10 @@ index.html
 ![index html validator](docs/index-html-validator.png)
 
 game.html
-![gamee html validator](docs/game-html-validator.png)
+![game html validator](docs/game-html-validator.png)
+
+categories.html
+![categories html validator](docs/categories-html-validator.png)
 
 style.css
 ![css validator](docs/index-css-validator.png)
@@ -175,6 +182,7 @@ style.css
 
 Javascript - game.js
 ![jshint validator](docs/jshint-validator.png)
+
 </details>
 
 ## Bugs
@@ -229,12 +237,30 @@ This was the issue is due to when using relative units, such as percentage, the 
 
 ![guess-error](docs/guess-error.png)
 
+This was because I had intially had the first letter as a captial and because I convert the input always to lowercase to ensure whatever the user inputs (capital or not) this will match the word BUT the first letter is not lowercase so it can never be guessed correctly since it is not possible to enter uppercase letters. I simply changed the first letter to lowercase as seen below.
+
+```javascript
+// Categories for user to chose
+const categoriesWords = {
+    football: [
+        "ronaldo",
+        "messi",
+        "neymar",
+        "mbappé",
+        "salah",
+        "lewandowski",
+        "foden",
+        "rooney",
+        "kane",
+        "haaland"
+    ],}
+```
 
 ## Credits
 
-- https://www.youtube.com/watch?v=JaC21cZnbl0
-- https://www.shecodes.io/athena/4613-sticking-footer-to-the-end-of-an-html-page#:~:text=You%20can%20stick%20a%20footer,the%20footer%20in%20your%20CSS.
-- https://www.w3schools.com/jsref/met_win_alert.asp
-- https://www.w3schools.com/howto/howto_js_popup.asp
-- https://forums.mobirise.com/discussion/30640/create-a-refresh-button-for-just-one-page
-- https://www.freeconvert.com/tif-to-png/download 
+- [YouTube - CSS: Sticky Footer Tutorial](https://www.youtube.com/watch?v=JaC21cZnbl0): Tutorial for implementing a sticky footer using CSS.
+- [SheCodes.io - Sticking Footer to the End of an HTML Page](https://www.shecodes.io/athena/4613-sticking-footer-to-the-end-of-an-html-page#:~:text=You%20can%20stick%20a%20footer,the%20footer%20in%20your%20CSS.): Additional methods for creating a sticky footer in HTML and CSS.
+- [W3Schools - Window Alert Method](https://www.w3schools.com/jsref/met_win_alert.asp): Used the `alert()` method for displaying notifications.
+- [W3Schools - JavaScript Popup Box](https://www.w3schools.com/howto/howto_js_popup.asp): Integration of JavaScript popup boxes for displaying information.
+- [Mobirise Forums - Creating a Refresh Button for a Single Page](https://forums.mobirise.com/discussion/30640/create-a-refresh-button-for-just-one-page): Solutions for adding a refresh button to a single page.
+- [FreeConvert.com - TIF to PNG Converter](https://www.freeconvert.com/tif-to-png/download): Tool for converting TIF image files to PNG format for web optimization.
