@@ -9,7 +9,7 @@ In my childhood years, when I first got a computer and being a teenage girl, I h
 1. **Start a New Game:** As a player, I want to start a new game easily so that I can begin guessing words right away.
 2. **Guess Feedback:** As a player, I want the game to provide feedback on my guesses, indicating whether the guessed letter is in the word and revealing its position if correct.
 3. **Incorrect Guess Tracking:** As a player, I want the game to keep track of my incorrect guesses, such as displaying them or deducting points.
-4. **Hint Option:** As a player, I want the option to receive a hint if I'm stuck, providing me with a clue related to the word being a cocktail.
+4. **Hint Option:** As a player, I want the option to receive a hint if I'm stuck, providing me with a clue related to the word being a cocktail, or whatever category I choose.
 5. **Game End on Correct Guess:** As a player, I want the game to end when I correctly guess the word, congratulating me on my win.
 6. **Play Multiple Rounds:** As a player, I want the ability to play multiple rounds without having to restart the entire game.
 7. **Intuitive Navigation:** As a player, I want the game to be intuitive and easy to navigate, with clear instructions on how to play.
@@ -109,7 +109,7 @@ Below are my wireframes, I love simpliciy and I wanted to carry that on through 
 
 ### View Category testing 
 
-In the process of enhancing the game's functionality to include multiple categories, I made several adjustments to ensure a seamless user experience. Initially, the game solely revolved around guessing words related to cocktails. However, to personalise the game and provide more variety, I decided to incorporate additional categories such as football players and clothing brands.
+In the process of enhancing the game's functionality to include multiple categories, I made several adjustments to create a better user experience. Initially, the game solely revolved around guessing words related to cocktails. However, to personalise the game and provide more variety, I decided to incorporate additional categories such as football players, clothing brands and more.
 
 To implement this feature, I first modified the data structure by renaming the constant from `words` to `categoriesWords` and expanded it to accommodate multiple categories. Each category now contains an array of words associated with it.
 
@@ -125,7 +125,7 @@ let randomIndex = Math.floor(Math.random() * words.length); // Calculate random 
 let selectedWord = words[randomIndex]; // Select a random word from the words array
 ```
 
-I decided to split my game into two HTML pages for better organization. One page is for selecting categories, and the other is for playing the game. This separation makes the code easier to manage. When users click on a category button, it triggers the startGame function, which constructs a URL with the selected category as a parameter. I used the window.location.href method to redirect users to the game page with their chosen category. This setup improves the user experience and makes it easier to expand the game with more categories in the future. I found [W3Schools](https://www.w3schools.com/js/js_window_location.asp) helpful for understanding how to use window.location.
+I decided to split my game into two HTML pages for better organisation. One page is for selecting categories, and the other is for playing the game. This separation makes the code easier to manage. When users click on a category button, it triggers the startGame function, which constructs a URL with the selected category as a parameter. I used the window.location.href method to redirect users to the game page with their chosen category. This setup improves the user experience and makes it easier to expand the game with more categories in the future. I found [W3Schools](https://www.w3schools.com/js/js_window_location.asp) helpful for understanding how to use window.location, which is a lot better rather than write out each function for each category which can be long and messy, my tutor taught me about this.
 
 ```html
 <main>
@@ -271,4 +271,5 @@ const categoriesWords = {
 - [FreeConvert.com - TIF to PNG Converter](https://www.freeconvert.com/tif-to-png/download): Utilized for converting TIF image files to PNG format for web optimization.
 - [Mozilla Developer Network (MDN) - CSS Positioning](https://developer.mozilla.org/en-US/docs/Web/CSS/position#): Referred to for styles and correct positioning needed in the project.
 - [TechSini - Multi Mockup](https://techsini.com/multi-mockup/index.php): Used for creating mockups.
+- [Code institiues LovesMaths tutorial](https://codeinstitute.net) taught me how to use the enter button function for the users guessed letters.
 
