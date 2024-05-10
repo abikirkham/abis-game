@@ -145,9 +145,6 @@ I decided to split my game into two HTML pages for better organization. One page
 </script>
 ```
 
-<details>
-  <summary><b>Click to expand for more testing below:</b></summary>
-
 - **Automated Testing:** Results from testing tools like [Lighthouse](https://chromewebstore.google.com/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk) for performance evaluation, and [Responsive Viewer](https://chromewebstore.google.com/detail/responsive-viewer/inmopeiepgfljkpkidclfgbgbmfcennb) for assessing screen size responsiveness, significantly improve the quality assurance process.
 
 index.html
@@ -185,7 +182,6 @@ Javascript - game.js
 
 As you can see there are 2 'unused variables' however these are used in the html therefore not established in the javascript code itself. No other issues identified. 
 
-</details>
 
 ## Bugs
 1. Upon creation of this game, I have decided to add a few more personalish features I think will make this project better for the user. One of these funtions is the 'Hint' function. Initially I was having issues with the display of the next, I ran this code through validator services like jshint and in the terminal and the function was properly srtuctured and working as should. This meant there was an issue in my css code, I began trial and error and attempted to solve this issue myself, I had the elp from Code Institue Tutor support to help me under stand where the issue was. Below is the orginal css code for this function and where the error lies.
