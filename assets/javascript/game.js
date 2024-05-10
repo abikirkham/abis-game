@@ -98,6 +98,14 @@ document.getElementById("displayWord").textContent = displayWord;
 // To store the already guessed letters 
 let guessedlist = []; 
 
+document.getElementById('letter-input').addEventListener('keydown', function(event) {
+if (event.key === "Enter") {
+    
+    guessLetter();
+    
+    console.log('Enter pressed');
+}
+});
 
 // Function to check Guessed letter 
 function guessLetter() { 
