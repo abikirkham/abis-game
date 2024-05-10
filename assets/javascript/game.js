@@ -1,3 +1,4 @@
+// jshint esversion: 6
 // Categories for user to chose
 const categoriesWords = {
     football: [
