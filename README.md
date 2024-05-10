@@ -257,10 +257,13 @@ const categoriesWords = {
 ```
 
 ## Credits
-
+- [GeeksForGeeks - Word guessing game](https://www.geeksforgeeks.org/word-guessing-game-using-html-css-and-javascript/): This was the tutorial and basic infrastructure for my game. This taught me how to create a game allowing me to understand and recreate my own version with extra personalized features.
 - [YouTube - CSS: Sticky Footer Tutorial](https://www.youtube.com/watch?v=JaC21cZnbl0): Tutorial for implementing a sticky footer using CSS.
 - [SheCodes.io - Sticking Footer to the End of an HTML Page](https://www.shecodes.io/athena/4613-sticking-footer-to-the-end-of-an-html-page#:~:text=You%20can%20stick%20a%20footer,the%20footer%20in%20your%20CSS.): Additional methods for creating a sticky footer in HTML and CSS.
 - [W3Schools - Window Alert Method](https://www.w3schools.com/jsref/met_win_alert.asp): Used the `alert()` method for displaying notifications.
 - [W3Schools - JavaScript Popup Box](https://www.w3schools.com/howto/howto_js_popup.asp): Integration of JavaScript popup boxes for displaying information.
-- [Mobirise Forums - Creating a Refresh Button for a Single Page](https://forums.mobirise.com/discussion/30640/create-a-refresh-button-for-just-one-page): Solutions for adding a refresh button to a single page.
-- [FreeConvert.com - TIF to PNG Converter](https://www.freeconvert.com/tif-to-png/download): Tool for converting TIF image files to PNG format for web optimization.
+- [Mobirise Forums - Creating a Refresh Button for a Single Page](https://forums.mobirise.com/discussion/30640/create-a-refresh-button-for-just-one-page): Provided solutions for adding a refresh button to a single page.
+- [FreeConvert.com - TIF to PNG Converter](https://www.freeconvert.com/tif-to-png/download): Utilized for converting TIF image files to PNG format for web optimization.
+- [Mozilla Developer Network (MDN) - CSS Positioning](https://developer.mozilla.org/en-US/docs/Web/CSS/position#): Referred to for styles and correct positioning needed in the project.
+- [TechSini - Multi Mockup](https://techsini.com/multi-mockup/index.php): Used for creating mockups.
+
