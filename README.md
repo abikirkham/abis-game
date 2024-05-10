@@ -18,9 +18,9 @@ In my childhood years, when I first got a computer and being a teenage girl, I h
 
 Below are my wireframes, I love simpliciy and I wanted to carry that on through this game. You can see the plan and sturcture I have created to develop my game.
 
-![Homepage Wireframe](docs/index-html-wireframe.png)
-![Game Wireframe](docs/game-html-wireframe.png)
-![Catagory Wireframe](docs/category-html-wireframe.png)
+<img src="docs/index-html-wireframe.png" alt="Homepage Wireframe" width="300">
+<img src="docs/game-html-wireframe.png" alt="Game Wireframe" width="300">
+<img src="docs/category-html-wireframe.png" alt="Category Wireframe" width="300">
 
 
 ## Technologies Used
@@ -56,6 +56,9 @@ Below are my wireframes, I love simpliciy and I wanted to carry that on through 
 
 - **Catagories** Here I wanted a user to have mutliple choices to chose from to keep the guessing game more interesting. 
 ![category](docs/categories.png)
+
+- **Already Guessed:** Here you can see below I have add a function to show stored already guessed letters which was created with myself a fellow student on slack who was creating the same thing.
+![Already guessed](docs/show-already-guessed.png)
 
 ## Deployment
 
@@ -104,7 +107,7 @@ Below are my wireframes, I love simpliciy and I wanted to carry that on through 
 | Categories html | User clicks on 'PLAY' button on index.html | The page will load with matching css and hover boxes loading correctly | Pass |
 | Selected category | User to Select a category | This will open there chosen category, can be proven by looking at html link | Pass |
 
-#### View Category testing 
+### View Category testing 
 
 In the process of enhancing the game's functionality to include multiple categories, I made several adjustments to ensure a seamless user experience. Initially, the game solely revolved around guessing words related to cocktails. However, to personalise the game and provide more variety, I decided to incorporate additional categories such as football players and clothing brands.
 
@@ -147,18 +150,21 @@ I decided to split my game into two HTML pages for better organization. One page
 
 - **Automated Testing:** Results from testing tools like [Lighthouse](https://chromewebstore.google.com/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk) for performance evaluation, and [Responsive Viewer](https://chromewebstore.google.com/detail/responsive-viewer/inmopeiepgfljkpkidclfgbgbmfcennb) for assessing screen size responsiveness, significantly improve the quality assurance process.
 
-index.html
-![index-lighthouse](docs/index-lighthouse.png)
-![index-screensizes](docs/index-screen-sizes.png)
+#### index.html
 
+<img src="docs/index-lighthouse.png" alt="index-lighthouse" width="300">
+<img src="docs/index-screen-sizes.png" alt="index-screensizes" width="300">
 
-game.html
-![game-lighthouse](docs/game-lighthouse.png)
-![game-screensizes](docs/game-screen-sizes.png)
+#### game.html
 
-categories.html
-![category-lighthouse](docs/category-lighthouse.png)
-![category-screensizes](docs/categories-screen-sizes.png)
+<img src="docs/game-lighthouse.png" alt="game-lighthouse" width="300">
+<img src="docs/game-screen-sizes.png" alt="game-screen-sizes" width="300">
+
+#### categories.html
+
+<img src="docs/category-lighthouse.png" alt="category-lighthouse" width="300">
+<img src="docs/categories-screen-sizes.png" alt="categories-screen-sizes" width="300">
+
 
 
 - **Validator Testing:** Validation results from HTML and CSS validators. Utilising [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) for CSS validation and [W3C Markup Validator](https://validator.w3.org/nu/) for HTML validation ensures thorough testing for any errors.
@@ -168,6 +174,7 @@ index.html
 
 game.html
 ![game html validator](docs/game-html-validator.png)
+
 
 categories.html
 ![categories html validator](docs/categories-html-validator.png)
