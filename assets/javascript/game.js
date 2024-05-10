@@ -130,6 +130,10 @@ function guessLetter() {
 
     // Add the letter to the guessed letters array 
     guessedlist.push(letter);
+    console.log(guessedlist);
+
+    let textField = document.getElementById('already-guessed')
+    textField.textContent += letter + " , ";
 
     // Update the word display based on the guessed letters 
     let updatedDisplay = ""; 
