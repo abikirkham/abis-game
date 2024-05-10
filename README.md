@@ -178,10 +178,12 @@ categories.html
 style.css
 ![css validator](docs/index-css-validator.png)
 
-- **Javascript Testing:** Using [JSHint](https://jshint.com) helps in identifying and rectifying JavaScript errors, ensuring code quality and reliability.
+- **Javascript Testing:** Using [JSHint](https://jshint.com) helps in identifying and rectifying JavaScript errors, ensuring code quality and reliability. Initally this result came with 14 warnings for using a `const` however upon researching at [StackOverflow](https://stackoverflow.com/questions/27441803/why-does-jshint-throw-a-warning-if-i-am-using-const) I found that by default, JSHint gives you warnings if you use new ES6 features that might not run on systems that don't support them. Therefore by placing `// jshint esversion: 6` in the first line allows the browser to recognise what features I am using.
 
 Javascript - game.js
-![jshint validator](docs/jshint-validator.png)
+![jshint validator](docs/jshint.png)
+
+As you can see there are 2 'unused variables' however these are used in the html therefore not established in the javascript code itself. No other issues identified. 
 
 </details>
 
