@@ -2,7 +2,7 @@
 ![Mockup](docs/mockup.png)
 ## Overview
 
-Simple as is sounds, this is my game, it is a word guessing game. This will be slowly developed on to keep the brain stimulated.
+In my childhood years, when I first got a computer and being a teenage girl, I had always loved playing on a site called Girls Go Games. It was so fun to do simple quizzes and games to keep my brain stimulated. I liked the fact it was 'girly'. That is where my inspiration came from to make my game, Abi's Game, a girly game that is meaningful to me. The simplicity of this word guessing game is to help me understand JavaScript and continue to personalize and develop this for myself. I hope you enjoy.
 
 ## User Stories
 
